@@ -141,7 +141,7 @@ class CartController extends Controller
             ->associate(Product::class);
 
 
-        return redirect()->back()->with('success_message', 'Item added to Cart');
+            return redirect()->route('bulk.index')->with('success_message', 'Item was added to your cart!');
     }
 
     /**
