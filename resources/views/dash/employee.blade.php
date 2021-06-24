@@ -72,7 +72,7 @@
                                             <tr>
                                                 <td>{{$x++}}</td>
                                                 <td>
-                                                <a href="javascript:void(0)"><img src="{{ asset('/public/upload/' . $employee->filename) }}"  alt="epmloyee" width="100px" class="img-circle"  style="height: 70px;
+                                                <a href="javascript:void(0)"><img src="{{ asset('/public/uploads/' . $employee->filename) }}"  alt="epmloyee" width="100px" class="img-circle"  style="height: 70px;
                                                                  width: 70px;"/> </a>
                                                 </td>
                                                 <td>
