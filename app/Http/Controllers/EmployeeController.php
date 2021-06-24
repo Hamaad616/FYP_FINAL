@@ -45,16 +45,18 @@ class EmployeeController extends Controller
         $employee->age   = request('age');
         $employee->joindate   = request('joindate');
         $employee->salary   = request('salary');
+        $file_path = 'public/upload/';
+        if(isset($file))
+        {
+            $file_name = $file->getClientOriginalName();
 
-        $file = $request->file('filename');
+            //File::makeDirectory($file_path, $mode = 0777, true, true);
 
-        $file_name = $file->getClientOriginalName();
+            $file->move($file_path, $file_name);
 
-        $file_path = 'uploads/';
+            $employee->filename = $file_name;
 
-        $file->move($file_path, $file_name);
-
-        $employee->filename = $file_name;
+        }
 
       if ($employee->save()) {
             return redirect('employees')->with('success', 'EMPLOYEE RECORD SAVED SUCCESSFULLY...!' );
