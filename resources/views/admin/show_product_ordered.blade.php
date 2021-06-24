@@ -4,6 +4,19 @@
     <!-- Page wrapper  -->
     <!-- ============================================================== -->
     <div class="page-wrapper">
+
+
+        @if(session()->has('success'))
+
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Success!</strong> {{session()->get('success')}}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+        @endif
+
         <!-- ============================================================== -->
         <!-- Container fluid  -->
         <!-- ============================================================== -->
@@ -38,7 +51,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Orders</h4>
                             <div class="table-responsive">
-                                <table class="table nowrap table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                                <table class="table product-overview" id="myTable">
                                     <thead>
                                     <tr>
                                         <th>Order id</th>
@@ -47,6 +60,7 @@
                                         <th>Date</th>
                                         <th>Payment Type</th>
                                         <th>Shipment Status</th>
+                                        <th>Action</th>
 
                                     </tr>
                                     </thead>
@@ -63,6 +77,13 @@
                                                 <input type="checkbox" class="toggle-class" data-id="{{ $order->id }}" data-toggle="toggle" data-style="ios slow" data-on="Processing" data-off="Not Processed" {{ $order->shipped == 1 ? 'checked' : ''}}><br>
                                                 <input type="checkbox" class="toggle-class1" data-id="{{ $order->id }}" data-toggle="toggle" data-style="ios slow" data-on="Shipped" data-off="Not Shipped" {{ $order->shipped == 2 ? 'checked' : ''}}><br>
                                                 <input type="checkbox" class="toggle-class2" data-id="{{ $order->id }}" data-toggle="toggle" data-style="ios slow" data-on="Delivered" data-off="Not Delivered" {{ $order->shipped == 3 ? 'checked' : ''}}><br>
+                                            </td>
+                                            <td>
+                                            <form method="post" style="display: inline-block;" action="{{ route('order.destroy', $order->id) }}">
+                                                {{ csrf_field() }}
+                                                <input type="hidden" name="_method" value="DELETE">
+                                                <button class="text-inverse" title="Delete" data-toggle="tooltip"><i class="ti-trash"></i></button>
+                                            </form>
                                             </td>
                                         </tr>
                                     @endforeach

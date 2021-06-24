@@ -52,7 +52,9 @@
 
                                             <tr>
                                                 <th>No</th>
-                                                 <th>Quantity</th>
+                                                <th>Product Name</th>
+                                                <th>Email</th>
+                                                <th>Quantity</th>
                                                 <th>Per Piece Rate</th>
                                                 <th>Time Limit</th>
                                                 <th>Country</th>
@@ -64,6 +66,8 @@
                                         <tfoot>
                                             <tr>
                                                 <th>No</th>
+                                                <th>Product Name</th>
+                                                <th>Email</th>
                                                 <th>Quantity</th>
                                                 <th>Per Piece Rate</th>
                                                 <th>Time Limit</th>
@@ -79,6 +83,8 @@
                                             @foreach($bulks as $bulk)
                                             <tr>
                                                 <td>{{$x++}}</td>
+                                                <td>{{$bulk->product_name}}</td>
+                                                <td>{{$bulk->email}}</td>
                                                 <td>{{$bulk->quantity}}</td>
                                                 <td>{{$bulk->desired_amount}}</td>
                                                 <td>{{$bulk->time_limit}}</td>

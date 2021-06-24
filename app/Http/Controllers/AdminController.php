@@ -92,6 +92,13 @@ class AdminController extends Controller
         $orders = Order::all();
         return view('admin.show_product_ordered')->with('orders', $orders);
     }
+    public function product_destroy($id): \Illuminate\Http\RedirectResponse
+    {
+        $orders = Order::find($id);
+       if ($orders->delete()){
+           return redirect()->to('/order_edit')->with('success', 'Order deleted successfully');
+       }
+    }
 
     public function carousel_edit(){
     	return view('admin.carousel_edit');

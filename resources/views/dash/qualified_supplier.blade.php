@@ -48,7 +48,7 @@
                                 <h4 class="card-title">Qualified Supplier</h4>
                                 <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
                                 <div class="table-responsive m-t-40">
-                                    <table id="example24" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                                    <table id="myTable" class="display nowrap table table-hover table-striped table-bordered">
                                         <thead>
                                             <tr>
                                                 <th>#</th>

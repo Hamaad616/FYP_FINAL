@@ -120,6 +120,7 @@ Route::get('/admin', 'PortalController@index_portal');
 /*   Admin Routes        */
 
 Route::get('/product_order', 'AdminController@product_order');
+Route::delete('/product_order/{id}', 'AdminController@product_destroy')->name('order.destroy');
 Route::get('/order_edit', 'AdminController@productOrdered');
 
 Route::get('/carousel_edit', 'AdminController@carousel_edit');
