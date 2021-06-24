@@ -45,6 +45,7 @@ class EmployeeController extends Controller
         $employee->age   = request('age');
         $employee->joindate   = request('joindate');
         $employee->salary   = request('salary');
+        $file = $request->file('filename');
         $file_path = 'public/upload/';
         if(isset($file))
         {
