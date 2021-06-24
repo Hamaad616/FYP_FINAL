@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Variant;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;
 use App\VariantValue;
+use Illuminate\View\View;
 
 class VariantValueController extends Controller
 {
@@ -14,7 +18,7 @@ class VariantValueController extends Controller
      */
     public function index()
     {
-        $varval = VariantValue::all(); /*$sign means varibale */ 
+        $varval = VariantValue::all(); /*$sign means varibale */
 
         return view('admin.variantvalue_view', ['variant_value'=>$varval]);
     }
@@ -67,12 +71,15 @@ class VariantValueController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param $id
+     * @return Application|Factory|View
      */
-    public function edit(VariantValue $value)
+    public function edit($id)
     {
-        return view('admin.variantvalue_edit', ['variant_value'=>$value]);
+        $val = VariantValue::find($id);
+        $value = VariantValue::where('id', '=', $val->id)->get();
+        $variants = Variant::all();
+        return view('admin.variantvalue_edit', ['value'=>$value], ['variants' => $variants]);
     }
 
     /**
@@ -82,8 +89,9 @@ class VariantValueController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, VariantValue $value)
+    public function update($id)
     {
+        $value = VariantValue::find($id);
         $value->variant_id = request('variant_id');
         $value->name = request('name');   /*(roll,name,address sub form ka varibales hain)*/
 
@@ -100,9 +108,10 @@ class VariantValueController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(VariantValue $value)
+    public function destroy($id)
     {
-        if ($value->delete()) 
+        $value = VariantValue::find($id);
+        if ($value->delete())
         {
             return redirect('variant_value')->with('success', 'Variant Value Has Been Deleted...!');
         }

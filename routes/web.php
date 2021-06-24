@@ -95,6 +95,8 @@ Route::resource('supplier', 'SuppliersController');
 
 Route::resource('variant_value', 'VariantValueController');
 
+Route::put('variant_value/{id}', 'VariantValueController@update');
+
 Route::resource('sociallink', 'SocialLinkController');
 
 Route::resource('slider', 'SliderController');

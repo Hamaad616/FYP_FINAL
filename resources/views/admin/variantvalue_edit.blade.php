@@ -5,7 +5,7 @@
 
 <div class="page-wrapper">
 
-            
+
 @if(session()->has('success'))
 
     <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -46,19 +46,20 @@
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-body">
-                                <form method="post" action="{{ url('variant_value', $value->id) }}"> 
+                                @foreach($value as $val)
+                                <form method="post" action="{{ url('variant_value', $val->id) }}">
                                     <input type="hidden" name="_method" value="PUT">
                                     {{ csrf_field() }}
                                     <div class="form-body">
-                                        
+
                                         <h5 class="card-title">About Variant Value</h5>
                                         <hr>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group" >
-                                                    
+
                                                     <label class="control-label">Variant Value Name</label>
-                                                    <input type="text" id="name" name="name" class="form-control" value="{{$value->name}}" placeholder="Value Name"> 
+                                                    <input type="text" id="name" name="name" class="form-control" value="{{$val->name}}" placeholder="Value Name">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
@@ -73,16 +74,17 @@
                                                 </div>
                                             </div>
                                             <!--/span-->
-                                            
+
                                             <!--/span-->
                                         </div>
-                                       
+
                                     </div>
                                     <div class="form-actions m-t-40">
                                         <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
                                         <button type="button" class="btn btn-dark">Cancel</button>
                                     </div>
                                 </form>
+                                    @endforeach
                             </div>
                         </div>
                     </div>

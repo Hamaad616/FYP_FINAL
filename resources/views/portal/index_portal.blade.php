@@ -478,9 +478,10 @@
                 <!-- slider end -->
 
 
-        <!-- Start of croydon Zendesk Widget script -->
-        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=307c6b6a-fac4-4a9c-aa20-62aefac19cd1"> </script>
-        <!-- End of croydon Zendesk Widget script -->
+        <!-- Start of croydonhelphelp Zendesk Widget script -->
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=db19f57e-522a-41dd-9e33-88cace2ea67e"> </script>
+        <!-- End of croydonhelphelp Zendesk Widget script -->
+
 
 
 
