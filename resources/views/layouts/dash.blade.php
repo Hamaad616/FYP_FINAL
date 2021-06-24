@@ -195,8 +195,6 @@
                         @if(Auth::User()->hasRole('CEO'))
                         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu">Qualified Supplier</span></a>
                             <ul aria-expanded="false" class="collapse">
-
-                                 <li><a href="{{ url('suppliers/create') }}">Add Qualified Suppliers</a></li>
                                  <li><a href="{{ url('suppliers') }}">All Qualified Suppliers</a></li>
                                  <li><a href="{{ url('suppliers/show') }}">Pending Qualified Suppliers</a></li>
 

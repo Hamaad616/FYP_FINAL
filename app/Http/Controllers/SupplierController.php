@@ -53,6 +53,7 @@ class SupplierController extends Controller
         $sup->email = request('email');
         $sup->phone = request('phone');
         $sup->quantity = request('quantity');
+        $sup->desired_amount = request('desired_amount');
         $sup->status = request('status');
 
 
@@ -85,12 +86,13 @@ class SupplierController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param Requests $requests
+     * @param Requests $id
      * @return Application|Factory|View
      */
-    public function edit(Requests $requests)
+    public function edit($id)
     {
-        $requests = Requests::all();
+        $reqs = Requests::find($id);
+        $requests = Requests::where('id','=',$reqs->id)->get();
         return view('dash.edit_qualified_supplier', ['requests'=>$requests]);
     }
 

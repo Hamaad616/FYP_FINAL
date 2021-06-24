@@ -27,7 +27,6 @@
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
                             <li class="breadcrumb-item active">Qualified Supplier</li>
                         </ol>
-                        <a href="{{url('suppliers/create')}}"><button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fa fa-plus-circle"></i> Create New</button></a>
                     </div>
                 </div>
             </div>
@@ -72,7 +71,7 @@
                                                     <i class="ti-download"></i>
                                                 </a>
 
-                                                <a href="{{route('suppliers.edit', $request->id)}}" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i class="ti-marker-alt"></i></a>
+                                                <a href="{{url('supplier', $request->id)}}" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i class="ti-marker-alt"></i></a>
                                                 <form method="post" style="display: inline-block;" action="{{route('suppliers.destroy', $request->id)}}">
                                                     {{ csrf_field() }}
                                                     <input type="hidden" name="_method" value="DELETE">

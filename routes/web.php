@@ -62,6 +62,9 @@ Route::resource('adddetails', 'PersonalDetailController');
 
 Route::resource('suppliers', 'SupplierController');
 
+Route::get('supplier/{edit}', 'SupplierController@edit');
+
+
 Route::get('download/file/{id}','SupplierController@downloadFile');
 
 Route::resource('supp_variant_value', 'SupplierVariantController');
@@ -239,7 +242,7 @@ Route::Post('/cart', 'CartController@store')->name('cart.store');
 Route::Post('/bulk/cart/{id}', 'CartController@storeBulk')->name('bulk.store');
 
 Route::delete('/cart/{id}', 'CartController@destroy')->name('cart.destroy');
-Route::delete('/bulk/cart/{id}', 'CartController@bulkDestroy')->name('bulk.destroy');
+Route::delete('/bulk/cart/{id}', 'CartController@bulkDestroy');
 
 Route::post('/bulk/cart/switchToSaveForLater/{id}', 'CartController@BulkSaveForLater')->name('bulk.switchToSaveForLater');
 Route::post('/bulk/cart/switchToSaveForLater/{id}', 'CartController@BulkSaveForLater')->name('bulk.switchToSaveForLater');

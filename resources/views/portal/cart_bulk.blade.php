@@ -408,7 +408,7 @@
                                     </div>
                                     <div class="cart-table-row-left">
                                         <div class="cart-table-actions">
-                                            <form action="{{ route('bulk.destroy', $item->rowId) }}" method="POST">
+                                            <form action="{{ url('bulk/cart', $item->rowId) }}" method="POST">
                                                 {{ csrf_field() }}
                                                 {{ method_field('DELETE') }}
                                                 <button type="submit" class="cart-options">Remove</button>
