@@ -50,8 +50,8 @@
                             <div class="card-body">
                                 <h4 class="card-title">Employee list</h4>
                                 <h6 class="card-subtitle"></h6>
-                                <div class="table-responsive">
-                                    <table id="demo-foo-addrow" class="table m-t-30 table-hover contact-list" data-page-size="10">
+                                <div class="table-responsive m-t-40">
+                                    <table id="example24" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" data-page-size="10">
                                         <thead>
                                             <tr>
                                                 <th>No</th>
@@ -98,7 +98,7 @@
                                         </tbody>
                                         <tfoot>
                                             <tr>
-                                                <td colspan="7">
+                                                <td colspan="10">
                                                     <div class="text-right">
                                                         <ul class="pagination"> </ul>
                                                     </div>
