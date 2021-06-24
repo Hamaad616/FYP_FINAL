@@ -1,0 +1,1161 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: shofixe Corporate Responsive Bootstrap Template
+    Template URI: http:/devitems.com
+    Description: This is html5 template
+    Author: Dev Items
+    Author URI: http://devitems.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+    1.  Theme default CSS
+    2.  Webfont CSS
+    3.  Home One CSS
+    4.  Slider CSS
+    5.  Slider Bottom CSS
+    6.  Arrival CSS
+    7.  Featured CSS
+    8.  Off Banner CSS
+    9.  Women CSS
+    10. Offer CSS
+    11. Men CSS
+    12. Newsletter CSS
+    13. Blog CSS
+    14. Service CSS
+    15. Touch CSS
+    16. Testimonial CSS
+    17. Footer CSS
+    18. Home 2 CSS
+    19. Shop CSS
+    20. Shop Left CSS
+    21. Shop List CSS
+    22. Product Details CSS
+    23. Contact CSS
+    24. Cart CSS
+    25. Checkout CSS
+    26. Mobile Menu
+    27. Scroll Up CSS
+    28. Modal CSS
+    29. Shortcode CSS
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400,500,600,700');
+html, body {height: 100%;}
+.floatleft {float:left}
+.floatright {float:right}
+.alignleft {float:left;margin-right:15px;margin-bottom: 15px}
+.alignright {float:right;margin-left:15px;margin-bottom: 15px}
+.aligncenter {display:block;margin:0 auto 15px}
+a{color:#282828}
+a:hover{color: #ED552C;text-decoration: none;}
+a:focus {outline:0px solid}
+img {max-width:100%;height:auto}
+.fix {overflow:hidden}
+.no-padding{padding:0}
+p {margin:0 0 15px;}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px;
+}
+a {-webkit-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;text-decoration:none;}
+a:active, a:hover {
+    outline: 0 none;
+}
+::-webkit-input-placeholder {opacity: 1 !important;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"}
+:-moz-placeholder {opacity: 1 !important;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"}
+::-moz-placeholder {opacity: 1 !important;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"}
+:-ms-input-placeholder {opacity: 1 !important;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"}
+ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0
+}
+.clear{clear:both}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+body {font-family: 'Montserrat', sans-serif;}
+a:focus, a:hover {text-decoration: none;}
+.mt-2{margin-top: 2px}
+.mt-10{margin-top: 10px}
+.mt-20{margin-top: 20px}
+.mt-25{margin-top: 25px}
+.mt-30{margin-top: 30px}
+.mt-40{margin-top: 40px}
+.mt-50{margin-top: 50px}
+.mt-70{margin-top: 70px}
+.mt-90{margin-top: 90px}
+.mr-25{margin-right: 25px}
+.mb-10{margin-bottom: 10px}
+.mb-15{margin-bottom: 15px}
+.mb-20{margin-bottom: 20px}
+.mb-25{margin-bottom: 25px}
+.mb-30{margin-bottom: 30px}
+.mb-35{margin-bottom: 35px}
+.mb-45{margin-bottom: 45px}
+.mb-48{margin-bottom: 48px}
+.mb-50{margin-bottom: 50px}
+.mb-90{margin-bottom: 90px}
+.mtb-25{margin: 25px 0}
+.pt-10{padding-top: 10px}
+.pt-30{padding-top: 30px}
+.pt-90{padding-top: 90px}
+.pt-50{padding-top: 50px}
+.pt-100{padding-top: 100px}
+.ptb-100{padding: 100px 0}
+.pt-140{padding-top: 140px}
+.pl-8{padding-left: 8px}
+.pl-70{padding-left: 70px}
+.pr-8{padding-right: 8px}
+.pr-16{padding-right: 16px}
+.pb-15{padding-bottom: 15px}
+.pb-30{padding-bottom: 30px}
+.pb-45{padding-bottom: 45px}
+.pb-50{padding-bottom: 50px}
+.pb-60{padding-bottom: 60px}
+.pb-75{padding-bottom: 75px}
+.ptb-10{padding: 10px 0}
+.ptb-35{padding: 35px 0}
+.ptb-40{padding: 40px 0}
+.ptb-60{padding: 60px 0}
+.ptb-90{padding: 90px 0}
+.ptb-110{padding: 110px 0}
+.ptb-130{padding: 10px 0}
+.ptb-25{padding: 25px 0}
+.ptb-220{padding: 220px 0}
+.plr-40{padding: 0 40px}
+.plr-70{padding: 0 70px}
+.pt-35{padding-top: 35px}
+
+/*----------------------------------------*/
+/*  2.  Webfont CSS
+/*----------------------------------------*/
+@font-face {
+    font-family: 'montserratlight';
+    src: url('fonts/webfont/montserrat-light-webfont.eot');
+    src: url('fonts/webfont/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/webfont/montserrat-light-webfont.woff2') format('woff2'),
+    url('fonts/webfont/montserrat-light-webfont.woff') format('woff'),
+    url('fonts/webfont/montserrat-light-webfont.ttf') format('truetype'),
+    url('fonts/webfont/montserrat-light-webfont.svg#montserratlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratsemi_bold';
+    src: url('fonts/webfont/montserrat-semibold-webfont.eot');
+    src: url('fonts/webfont/montserrat-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/webfont/montserrat-semibold-webfont.woff2') format('woff2'),
+    url('fonts/webfont/montserrat-semibold-webfont.woff') format('woff'),
+    url('fonts/webfont/montserrat-semibold-webfont.ttf') format('truetype'),
+    url('fonts/webfont/montserrat-semibold-webfont.svg#montserratsemi_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.header-area {
+    box-shadow: 0 2px 2px #d2d0d0;
+}
+.header-top-area{
+    background: #282828;
+}
+.top-login-cart {
+    float: right;
+}
+.social-icons ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.social-icons ul li{
+    display: inline;
+    margin-right: 30px;
+}
+.social-icons ul li:last-child{
+    margin-right: 0px;
+}
+.social-icons ul li a{
+    color: #A6A6A6;
+}
+.social-icons ul li:hover a{
+    color: #ED552C;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.top-left p{
+    font-size: 12px;
+    color: #a6a6a6;
+    padding: 25px 0px;
+    margin: 0;
+}
+.search-box {
+    display: inline-block;
+    float: right;
+    padding-top: 12px;
+}
+.search-box img{
+    margin-top:3px;
+}
+.search-box form {
+    border: 1px solid #cccccc;
+    float: right;
+    height: 32px;
+    margin-left: 15px;
+    position: relative;
+    width: 212px;
+}
+.info-text > h4 {
+    color: #282828;
+    font-size: 16px;
+    margin-bottom: 0;
+    font-family: 'montserratsemi_bold';
+}
+.info-text > p {
+    color: #282828;
+    font-size: 12px;
+    font-family: 'montserratlight';
+}
+.info {
+    padding-top: 12px;
+}
+.top-login-cart > ul > li:first-child > a {
+    padding-left:0px;
+}
+.cart-info > span {
+    font-size: 12px;
+    font-family: 'montserratlight';
+}
+span.cart-info a {
+    color: #282828;
+    font-size: 12px;
+}
+span.cart-info a:hover{
+    color: #ED552C;
+}
+.sub-total-cart.text-center > span {
+    float: right;
+}
+.search-box form > input {
+    border: medium none;
+}
+.search-box input[type="text"] {
+    color: #282828;
+    font-family: "montserratsemi_bold";
+    font-size: 16px;
+    line-height: 28px;
+    padding-left: 15px;
+    width: 100%;
+}
+.top-login-cart ul, .account-usd ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.top-login-cart ul li, .account-usd ul li{
+    display: inline-block;
+}
+.top-login-cart  > ul > li > a, .account-usd > ul > li > a{
+    display: block;
+    color: #A6A6A6;
+    font-size: 12px;
+    padding-right: 22px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+/*
+.account-usd ul > li:hover > a, .top-login-cart ul > li:hover a{
+    color: #ED552C;
+}
+*/
+.top-login-cart ul li img{
+    margin-right: 10px;
+    margin-top: -9px;
+}
+.mainmenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.mainmenu ul li{
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.mainmenu ul li.shop ul.submenu-mainmenu{
+    width: 220px;
+}
+.mega-menu a {
+    display: block;
+}
+.mega-menu span a.title {
+    color: #282828 !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'montserratsemi_bold';
+}
+.mega-menu span a.title:hover {
+    margin-left: auto;
+}
+.mainmenu ul li.shortcode .mega-menu {
+    width: 780px;
+}
+.mainmenu ul li.shortcode .mega-menu span {
+    width: 20%;
+}
+.mainmenu > ul > li > a   {
+    color: #fff;
+    display: block;
+    font-family: "Montserrat",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 12px 18px;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.mainmenu > ul > li:hover > a {
+    color: #ED542B;
+}
+.submenu-mainmenu li {
+    display: inline-block;
+}
+.mainmenu ul > li > .mega-menu span > a:hover, .mainmenu ul > li > ul.submenu-mainmenu > li:hover > a, ul.submenu-mainmenu > li > ul.sub-submenu-mainmenu > li:hover > a{
+    color: #ED552C;
+    margin-left: 5px;
+}
+.mainmenu ul > li > .mega-menu span > a.title:hover{
+    margin-left: inherit;
+}
+.submenu-mainmenu a {
+    color: #a6a6a6;
+    display: block;
+    font-size: 12px;
+}
+.mainmenu ul > li:first-child > a{
+    padding-left: 0px;
+}
+.mainmenu > ul > li > a span {
+    left: 47px;
+    position: absolute;
+    top: -21px;
+}
+.mainmenu ul li.dropdown{
+    position: relative;
+}
+ul.submenu-mainmenu li{position: relative; display: block}
+ul.sub-submenu-mainmenu {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #ffffff;
+    border-color: #0a95be #adadad #adadad;
+    -o-border-image: none;
+    border-image: none;
+    border-style: solid;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    content: "";
+    padding: 12px 0;
+    position: absolute;
+    right: -171px;
+    top: 0;
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: center top 0;
+    transform-origin: center top 0;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    visibility: hidden;
+    width: 170px;
+    z-index: -99;
+}
+.mainmenu ul#nav > li > ul.submenu-mainmenu > li > ul.sub-submenu-mainmenu > li > a {
+    color: #303030;
+    display: block;
+    padding: 0px 16px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.mainmenu ul#nav > li > ul.submenu-mainmenu > li > ul.sub-submenu-mainmenu > li > a {
+    color: #a6a6a6;
+    display: block;
+    padding: 0 16px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.mainmenu ul li .mega-menu span a, .mainmenu ul li ul.submenu-mainmenu li a {
+    color: #444;
+    font-weight: 400;
+    text-transform: capitalize;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.mainmenu ul li .mega-menu span a, .mainmenu ul li ul.submenu-mainmenu li:last-child a {
+    margin-bottom: 0;
+}
+.mainmenu ul li ul.submenu-mainmenu li:hover ul.sub-submenu-mainmenu {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    visibility: visible;
+    z-index: 99999;
+}
+.account-usd ul li, .top-login-cart ul li{
+    display: inline-block;
+    position: relative;
+}
+.top-login-cart > ul > li:last-child > a, .account-usd > ul > li:last-child > a {
+    padding-right: 0px;
+}
+.account-usd > ul > li > ul.submenu-mainmenu, .top-login-cart > ul > li > ul.submenu-mainmenu, .mainmenu > ul > li > ul.submenu-mainmenu{
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 12px 0;
+    position: absolute;
+    text-align: left;
+    opacity: 0;
+    top: 23px;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    transition: all 0.6s ease 0s;
+    width: 138px;
+    z-index: -99;
+    border: 1px solid #C5C5C5;
+}
+.mainmenu > ul > li > ul.submenu-mainmenu{
+    top: 36px;
+}
+.account-usd ul li a i {
+    margin-left: 8px;
+}
+.account-usd > ul > li > ul.submenu-mainmenu > li > a, .mainmenu > ul > li > ul.submenu-mainmenu > li > a, .mainmenu > ul > li > ul.submenu-mainmenu > li > a > ul.sub-submenu-mainmenu a, .mega-menu a, ul.submenu-mainmenu > li > ul.sub-submenu-mainmenu > li > a {
+    color: #444;
+    display: block;
+    font-family: 'montserratlight';
+    font-size: 12px;
+    padding: 6px 20px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.mainmenu ul li ul.submenu-mainmenu li a i.fa.fa-angle-right {
+    float: right;
+}
+.mainmenu-area {
+    background: #282828 none repeat scroll 0 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 74%;
+    z-index: 99;
+}
+.mainmenu-area.four{width: 100%}
+.mainmenu > ul > li > ul.submenu-mainmenu {
+    width: 180px;
+}
+.mainmenu ul li .mega-menu {
+    background: rgba(255, 255, 255, 1) url("img/menu/1.jpg") no-repeat scroll 92% 20%;
+    position: absolute;
+    width: 820px;
+    right: auto;
+    padding: 35px 30px 30px 30px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    left: -42px;
+    margin: 0;
+    position: absolute;
+    text-align: left;
+    opacity: 0;
+    top: 100%;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    transition: all 0.6s ease 0s;
+    z-index: -99;
+    border: 1px solid #C5C5C5;
+    padding: 35px 30px 30px 30px;
+}
+.mainmenu ul li:nth-child(5) .mega-menu{
+    left: -368px;
+}
+.mainmenu ul li.shortcode .mega-menu {
+    background: #fff;
+    position: absolute;
+    width: 820px;
+    right: auto;
+    padding: 35px 30px 30px 30px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    left: -464px;
+    margin: 0;
+    position: absolute;
+    text-align: left;
+    opacity: 0;
+    top: 100%;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    transition: all 0.6s ease 0s;
+    z-index: -99;
+    border: 1px solid #C5C5C5;
+    padding: 35px 30px 30px 30px;
+}
+.mainmenu ul li .mega-menu.two {
+    background: rgba(255, 255, 255, 1) url("img/menu/2.jpg") no-repeat scroll 92% 20%;
+}
+.mainmenu ul li:hover .mega-menu {
+    margin-top: 0;
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    z-index: 9999;
+}
+.mainmenu ul li .mega-menu span {
+    float: left;
+    width: 25%;
+}
+.mega-menu span i, .submenu-mainmenu li a i {
+    font-size: 8px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.account-usd > ul > li > ul.submenu-mainmenu > li:hover > a, .account-usd > ul > li > ul.submenu-mainmenu > li:hover > i, .mainmenu > ul > li > ul.submenu-mainmenu > li:hover > a, .mega-menu > a:hover{
+    color: #EC552C;
+}
+.account-usd ul li ul.submenu-mainmenu li i, .language img, .account-usd ul li.language ul li img{
+    margin-right: 10px;
+    font-size: 8px;
+}
+.account-usd ul li.currency ul.submenu-mainmenu li i{
+    font-size: 12px;
+}
+.account-usd ul li.currency ul li i{
+    margin-right: 5px;
+}
+.account-usd ul li.currency ul.submenu-mainmenu{
+    width: 100px;
+}
+.top-login-cart ul li ul.submenu-mainmenu {
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    width: 225px;
+    top: 21px;
+    right: 0;
+    left: auto;
+}
+.top-login-cart ul li ul.submenu-mainmenu li{
+    width: 220px;
+    padding: 10px 20px;
+}
+.account-usd ul li:hover ul.submenu-mainmenu, .top-login-cart ul li:hover ul.submenu-mainmenu, .mainmenu ul li:hover ul.submenu-mainmenu {
+    opacity: 1;
+    transform: scaleY(1);
+    z-index: 9999;
+}
+.cart-img{
+    float: left;
+    height: 50px;
+    width: 59px;
+}
+.cart-info{
+    display: inline-block;
+
+}
+.cart-info h5, .cart-info h6{
+    font-size: 12px;
+    color: #282828;
+    font-family: 'montserratlight';
+    line-height: 20px;
+    margin: 0px;
+
+}
+.cart-info h5 a, .cart-info h6{
+    font-size: 12px;
+    color: #282828;
+    font-family: 'montserratlight';
+    line-height: 20px;
+    margin: 0px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    margin-right: 50px;
+}
+.cart-info h5 a:hover{
+    color: #FF0000 !important;
+}
+.trash-cart{
+    float: right;
+}
+li.single-cart-item > span.trash-cart > a i{
+    color: #a6a6a6;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.sub-total-cart h5{
+    font-size: 14px;
+    color: #282828;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 20px;
+    margin: 0;
+}
+.sub-total-cart h5 span{
+    float: right;
+}
+.sub-total-cart > a.view-cart{
+    font-size: 10px;
+    color: #a6a6a6;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border: 1px solid #a6a6a6;
+    border-radius: 20px;
+    display: inline-block;
+    float: left;
+    margin-top: 20px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.sub-total-cart > a.view-cart:hover, .sub-total-cart > a.view-cart.active{
+    color: #fff !important;
+    border: 1px solid #EC552C;
+    background: #EC552C;
+}
+.sub-total-cart > a{
+    margin-right: 10px;
+}
+.sub-total-cart > a:last-child{
+    margin-right: 0px;
+}
+
+/*----------------------------------------*/
+/*  15. Touch CSS
+/*----------------------------------------*/
+.touch-area{
+    background-image: url(img/banner/2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.touch-area:after{
+    position: absolute;
+    background: rgba(40, 40, 40, 0.9);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+.touch-left, .touch-right {
+    position: relative;
+    z-index: 99;
+}
+.touch-left p {
+    color: #c2c1c1;
+    font-family: "montserratlight";
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+.social-icon{}
+.social-icon ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.social-icon ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+.social-icon ul li:last-child{
+    margin-right: 0px;
+}
+.social-icon ul li a{
+    display: block;
+    color: #c2c1c1;
+    height: 36px;
+    width: 36px;
+    border: 1px solid #c2c1c1;
+    background: #252525;
+    text-align: center;
+    font-size: 18px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.social-icon ul li a i{
+    line-height: 34px;
+}
+.social-icon ul li:hover a{
+    color: #EC552C;
+}
+.touch-right h2 {
+    color: #fefefe;
+    font-family: "Poppins",sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+.touch-right{margin-left: 65px}
+.touch-right input, .touch-right textarea {
+    background: rgba(255, 255, 255, 0.12) none repeat scroll 0 0;
+    border: 1px solid #646464;
+    border-radius: 25px;
+    color: #ddd;
+    font-family: "montserratlight";
+    font-size: 12px;
+    height: 38px;
+    padding-left: 15px;
+    width: 46%;
+}
+.touch-right input[type="text"]:first-child{margin-right: 40px}
+.touch-right textarea{width: 100%; padding-top: 15px}
+.touch-right input:last-child{margin-right: 0;}
+.touch-right button.section-button {
+    border: medium none;
+    padding: 6px 30px;
+}
+/*----------------------------------------*/
+/*  16. Testimonial CSS
+/*----------------------------------------*/
+.testimonial-area{
+    background-image: url(img/banner/3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.testimonial-area:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 40, 40, 0.9);
+    content: "";
+}
+.testimonial-left, .testimonial-right{
+    z-index: 99;
+    position: relative;
+    color: #c2c1c1;
+}
+.testimonial-left h2{
+    color: #fefefe;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+/*----------------------------------------*/
+/*  17. Footer CSS
+/*----------------------------------------*/
+.footer-middle-area{
+    background: #252525;
+}
+.footer-widget h5 {
+    color: #ec552c;
+    font-family: "montserratsemi_bold";
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-widget h5:after{
+    position: absolute;
+    content: "";
+    width: 68px;
+    height: 1px;
+    background: #ec552c;
+    bottom: 0;
+    left:0;
+}
+.two .footer-menu.text-right{
+    float: right;
+}
+.col-md-2 .footer-widget {
+    float: right;
+}
+.footer-icon {
+    float: left;
+    margin-top: 5px;
+    color: #ec552c;
+    font-size: 20px;
+}
+.single-footer-contact{
+    margin-top: 15px;
+}
+.footer-contact-info{
+    display: block;
+    margin-left: 30px;
+}
+.footer-contact-info p, .footer-contact-info p a{
+    margin: 0px;
+    font-size: 12px;
+    color: #ddd;
+    font-family: 'montserratlight';
+    line-height: 20px;
+}
+.footer-contact-info p a:hover{
+    color: #ec552c;
+}
+.footer-widget ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-widget ul li{
+    display: block;
+}
+.footer-img {
+    display: inline-block;
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.banner-text {
+    z-index: 9;
+    position: relative;
+}
+.breadcrumbs.text-right{float:right}
+.banner-area.shop-left.dark{background: #000}
+.footer-area.four .copyright > p{margin-top: 10px}
+.footer-widget ul li a, .footer-widget.payment > p{
+    color: #ddd;
+    font-size: 12px;
+    line-height: 25px;
+    font-family: 'montserratlight';
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.footer-widget ul li i{
+    color: #ddd;
+    font-size: 8px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+.footer-widget ul li:hover a{
+    color: #ec552c;
+    margin-left: 5px;
+}
+.footer-widget ul li:hover i{
+    color: #ec552c;
+}
+.footer-bottom-area{
+    background: #363636;
+}
+.copyright p{
+    font-size: 13px;
+    color: #ddd;
+    font-family: 'montserratlight';
+    margin: 0;
+    padding: 10px 0px;
+}
+.copyright p span a{
+    color: #ec552c;
+}
+.copyright p span a:hover{
+    text-decoration: underline;
+}
+.footer-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-menu ul li{
+    display: inline-block;
+    padding: 10px 0px;
+}
+.footer-menu ul li a{
+    font-size: 12px;
+    color: #ddd;
+    border-right: 1px solid #aeaeae;
+    padding: 0px 10px;
+    margin: 0;
+}
+.footer-menu ul li:hover a, .footer-menu ul li.active a{
+    color: #ec552c;
+}
+.footer-menu ul li:last-child a{
+    border-right: none;
+}
+.payment.text-right {
+    float: right;
+}
+
+
+/*--------------------------------------------*/
+/*  26. Mobile Menu
+/*--------------------------------------------*/
+.mobile-menu-area {
+    display: none;
+    background: #EC552C none repeat scroll 0 0;
+}
+.mean-container .mean-bar:after {
+    display: none;
+}
+.mean-container .mean-nav ul li a:hover {
+    color: #EC552C;
+    background: none;
+}
+.mean-container a.meanmenu-reveal span {
+    background: #fff;
+}
+.mean-container .mean-nav ul li a {
+    background: #fff;
+    color: #303030;
+    display: block;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+    background: none;
+    top: -4px;
+}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+    background: none;
+}
+.mean-container .mean-nav ul li {
+    background: #fff;
+}
+.mean-container .mean-nav ul li li a {
+    color: #303030;
+    opacity: .90;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    border-top: 0;
+}
+.mean-container a.meanmenu-reveal {
+    color: #444;
+}
+.meanmenu-reveal.meanclose:hover {
+    color: #303030 !important;
+}
+.mean-container a.meanmenu-reveal:hover span {
+    background: #303030;
+}
+.mobile-menu-area .mean-nav {
+    background: #EC552C none repeat scroll 0 0;
+}
+.mean-last {
+    margin-bottom: 20px;
+}
+.mobile-menu {
+    position: relative;
+}
+.mean-container .mean-bar:before {
+    color: #ffffff;
+    content: "MENU";
+    font-size: 18px;
+    font-weight: 600;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+}
+/*----------------------------------------*/
+/*  27. Scroll Up CSS
+/*----------------------------------------*/
+#scrollUp {
+    background: #EC552C none repeat scroll 0 0;
+    bottom: 52px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    height: 35px;
+    position: fixed;
+    right: 50px;
+    text-align: center;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 4ms linear 0s;
+    transition: all 4ms linear 0s;
+    width: 35px;
+    z-index: 9999;
+}
+#scrollUp i{
+    line-height: 32px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#scrollUp:hover i{
+    color: #000;
+}
+
+body {
+    letter-spacing: 0.8px;
+}
+
+.container-fluid {
+    margin-top: 80px !important;
+    margin-bottom: 80px !important
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 7px
+}
+
+.cursor-pointer {
+    cursor: pointer
+}
+
+a {
+    text-decoration: none !important;
+    color: #651FFF !important
+}
+
+.bold {
+    font-weight: 600
+}
+
+.small {
+    font-size: 12px !important;
+    letter-spacing: 0.5px !important
+}
+
+.Today {
+    color: rgb(83, 83, 83)
+}
+
+.btn-outline-primary {
+    background-color: #fff !important;
+    color: #4bb8a9 !important;
+    border: 1.3px solid #4bb8a9;
+    font-size: 12px;
+    border-radius: 0.4em !important
+}
+
+.btn-outline-primary:hover {
+    background-color: #4bb8a9 !important;
+    color: #fff !important;
+    border: 1.3px solid #4bb8a9
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #42A5F5 !important
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: #455A64;
+    padding-left: 0px;
+    margin-top: 30px
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 13px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+    color: #455A64 !important
+}
+
+#progressbar #step1:before {
+    content: "1";
+    color: #fff;
+    width: 29px;
+    margin-left: 15px !important;
+    padding-left: 11px !important
+}
+
+#progressbar #step2:before {
+    content: "2";
+    color: #fff;
+    width: 29px
+}
+
+#progressbar #step3:before {
+    content: "3";
+    color: #fff;
+    width: 29px;
+    margin-right: 15px !important;
+    padding-right: 11px !important
+}
+
+#progressbar li:before {
+    line-height: 29px;
+    display: block;
+    font-size: 12px;
+    background: #455A64;
+    border-radius: 50%;
+    margin: auto
+}
+
+#progressbar li:after {
+    content: '';
+    width: 121%;
+    height: 2px;
+    background: #455A64;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 15px;
+    z-index: -1
+}
+
+#progressbar li:nth-child(2):after {
+    left: 50%
+}
+
+#progressbar li:nth-child(1):after {
+    left: 25%;
+    width: 121%
+}
+
+#progressbar li:nth-child(3):after {
+    left: 25% !important;
+    width: 50% !important
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #4bb8a9
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 2px 4px 15px 0px rgb(0, 108, 170);
+    z-index: 0
+}
+
+small {
+    font-size: 12px !important
+}
+
+.a {
+    justify-content: space-between !important
+}
+
+.border-line {
+    border-right: 1px solid rgb(226, 206, 226)
+}
+
+.card-footer img {
+    opacity: 0.3
+}
+
+.card-footer h5 {
+    font-size: 1.1em;
+    color: #8C9EFF;
+    cursor: pointer
+}
