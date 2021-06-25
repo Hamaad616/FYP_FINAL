@@ -477,10 +477,19 @@
 
                 <!-- slider end -->
 
-
-        <!-- Start of croydonhelphelp Zendesk Widget script -->
-        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=db19f57e-522a-41dd-9e33-88cace2ea67e"> </script>
-        <!-- End of croydonhelphelp Zendesk Widget script -->
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                s1.async=true;
+                s1.src='https://embed.tawk.to/60d5b2c665b7290ac637df85/1f91c4mhr';
+                s1.charset='UTF-8';
+                s1.setAttribute('crossorigin','*');
+                s0.parentNode.insertBefore(s1,s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
 
 
 
