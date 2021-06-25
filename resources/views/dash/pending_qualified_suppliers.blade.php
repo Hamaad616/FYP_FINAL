@@ -71,7 +71,7 @@
                                                     <i class="ti-download"></i>
                                                 </a>
 
-                                                <a href="{{url('supplier', $request->id)}}" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i class="ti-marker-alt"></i></a>
+                                                <a href="{{url('supp', $request->id)}}" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i class="ti-marker-alt"></i></a>
                                                 <form method="post" style="display: inline-block;" action="{{route('suppliers.destroy', $request->id)}}">
                                                     {{ csrf_field() }}
                                                     <input type="hidden" name="_method" value="DELETE">

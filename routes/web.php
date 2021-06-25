@@ -62,7 +62,7 @@ Route::resource('adddetails', 'PersonalDetailController');
 
 Route::resource('suppliers', 'SupplierController');
 
-Route::get('supplier/{edit}', 'SupplierController@edit');
+Route::get('supp/{id}', 'SupplierController@edit');
 
 
 Route::get('download/file/{id}','SupplierController@downloadFile');
@@ -73,6 +73,7 @@ Route::post('supp_variant_value/{id}', 'SupplierVariantController@update');
 Route::delete('supp_variant_value/{id}', 'SupplierVariantController@destroy');
 
 Route::get('supplier/web', 'SuppliersController@index');
+
 
 Route::get('changeStatus', 'SupplierController@changeStatus')->name('changeStatusPu');
 Route::get('changeStat', 'AdminController@changeStatus')->name('changeShippedPu');
